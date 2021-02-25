@@ -722,3 +722,144 @@
   722  cd ..
   723  ls
   724  history > history.txt
+  725  git checkout master
+  726  git commit -am "update all"
+  727  git push 
+  728  git add .
+  729  git commit -am "update all"
+  730  git push 
+  731  lab comprehensive-review start
+  732  cd
+  733  cd DO180/labs/comprehensive-review/
+  734  cd image/
+  735  ls
+  736  ./get-nexus-bundle.sh 
+  737  sudo podman build -t nexus .
+  738  ls
+  739  ./get-nexus-bundle.sh 
+  740  ls
+  741  cd ..
+  742  ls
+  743  cd deploy/
+  744  ls
+  745  cd openshift/
+  746  ls
+  747  cd resources/
+  748  ls
+  749  cd ..
+  750  ls
+  751  ls -al deploy/
+  752  ls -alR deploy/
+  753  ls -alR image/
+  754  ls
+  755  cd image/
+  756  ls
+  757  vim Dockerfile
+  758  sudo podman build -t nexus .
+  759  vim Dockerfile
+  760  sudo podman build -t nexus .
+  761  vim Dockerfile
+  762  sudo podman build -t nexus .
+  763  ls -alt
+  764  vim Dockerfile
+  765  cat Dockerfile  | grep -i version
+  766  vim Dockerfile
+  767  sudo podman build -t nexus .
+  768  pwd
+  769  vim Dockerfile
+  770  sudo podman build -t nexus .
+  771  vim Dockerfile
+  772  sudo podman build -t nexus .
+  773  top
+  774  ls
+  775  vim Dockerfile 
+  776  sudo podman build -t nexus .
+  777  vim Dockerfile 
+  778  sudo podman build -t nexus .
+  779  vim Dockerfile 
+  780  sudo podman build -t nexus .
+  781  vim Dockerfile 
+  782  sudo podman build -t nexus .
+  783  vim Dockerfile 
+  784  sudo podman build -t nexus .
+  785  vim Dockerfile 
+  786  sudo podman build -t nexus .
+  787  sudo podman images
+  788  ls
+  789  cd ..
+  790  ls
+  791  cd deploy/
+  792  ls
+  793  cd local/
+  794  ls
+  795  ./run-persistent.sh 
+  796  sudo pdoman ps
+  797  sudo podman ps
+  798  ./run-persistent.sh 
+  799  sudo podman ps
+  800  sudo podman images
+  801  sudo podman rmi f92d312fad77 1371e488ed32 41cacf1b8e2e 390971786ce1 f0e2685a959f 628008940e65 057f8cc839dd
+  802  sudo podman images
+  803  sudo podman rmi f92d312fad77 1371e488ed32 41cacf1b8e2e 390971786ce1 f0e2685a959f 628008940e65 057f8cc839dd
+  804  sudo podman rmi f92d312fad77 1371e488ed32 41cacf1b8e2e 390971786ce1 f0e2685a959f 628008940e65 057f8cc839dd -f
+  805  sudo podman images
+  806  cd ..
+  807  ls
+  808  cd image/
+  809  ls
+  810  vim Dockerfile 
+  811  sudo podman build -t nexus .
+  812  cd ..
+  813  ls
+  814  cd deploy/local/
+  815  ls
+  816  ./run-persistent.sh 
+  817  sudo podman ps
+  818  sudo podman inspect nexus
+  819  sudo podman inspect nexus | grep -i IP
+  820  sudo podman inspect nexus | grep -i ip
+  821  ls
+  822  cat run-persistent.sh 
+  823  sudo podman ps
+  824  sudo podman inspect
+  825  sudo podman ps
+  826  sudo podman inspect boring_banzai
+  827  sudo podman inspect boring_banzai | grep ip
+  828  sudo podman inspect boring_banzai | grep IP
+  829  sudo podman ps
+  830  sudo podman rm -rf boring_banzai
+  831  sudo podman stop boring_banzai
+  832  sudo podman rm  boring_banzai
+  833  sudo podman push localhost/nexus:latest quay.io/oberlander1/nexus:latest
+  834  sudo podman login quay.io
+  835  sudo podman push localhost/nexus:latest quay.io/oberlander1/nexus:latest
+  836  history | grep login
+  837  oc login -u ${RHT_OCP4_DEV_USER} -p ${RHT_OCP4_DEV_PASSWORD} ${RHT_OCP4_MASTER_API}
+  838  cd
+  839  ./login.sh 
+  840  source /usr/local/etc/ocp4.config 
+  841  oc new-project ${RHT_OCP4_DEV_USER}-review
+  842  ls
+  843  cd DO180
+  844  ls
+  845  cd labs/
+  846  ls
+  847  cd comprehensive-review/
+  848  ls
+  849  cd deploy/
+  850  cd openshift/
+  851  ls
+  852  cd resources/
+  853  ls
+  854  less nexus-template.json 
+  855  oc process -f ./nexus-template.json -p RHT_OCP4_QUAY_USER=${RHT_OCP4_QUAY_USER} | oc create -f -
+  856  oc get pods
+  857  oc logs nexus-1-d9b9k
+  858  oc get svc
+  859  oc expose svc/nexus
+  860  oc get routes
+  861  lab comprehensive-review grade
+  862  exit
+  863  cd DO180-apps/
+  864  ls
+  865  history > history.txt 
